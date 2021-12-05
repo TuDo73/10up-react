@@ -1,0 +1,65 @@
+@import "styles/core/all.scss";
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.headerWrap {
+  padding: 55px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuBtn {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+
+  &.isActive {
+    span {
+      &:nth-child(1) {
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%) rotate(45deg);
+      }
+      &:nth-child(2) {
+        transform: translateX(120%);
+      }
+      &:nth-child(3) {
+        bottom: 50%;
+        width: 100%;
+        transform: translateY(50%) rotate(315deg);
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    left: 0;
+
+    &:nth-child(1) {
+      width: 70%;
+      top: 0;
+      transition-delay: 0.125s;
+    }
+    &:nth-child(3) {
+      width: 60%;
+      bottom: 0;
+      transition-delay: 0.25s;
+    }
+  }
+}

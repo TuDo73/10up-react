@@ -1,0 +1,10 @@
+@import "styles/core/all.scss";
+
+.techWrap {
+  height: 475px;
+  // @include background-image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}

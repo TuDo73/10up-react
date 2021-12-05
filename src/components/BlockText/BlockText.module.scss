@@ -1,0 +1,58 @@
+@import "styles/core/all.scss";
+
+.blockText {
+  max-width: 500px;
+  // padding: 0 20px;
+  flex: 1;
+  position: relative;
+  &.isCenter {
+    text-align: center;
+
+    .button {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &.isWhite {
+    color: white;
+    a {
+      color: white;
+    }
+  }
+}
+
+.headingText {
+  margin-bottom: 30px;
+}
+
+.textContent {
+  margin-bottom: 50px;
+}
+.caption {
+  color: $green;
+
+  &.isBlue {
+    color: $blue;
+  }
+}
+
+.buttonWrap {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.link {
+  margin-left: 40px;
+  a {
+    text-decoration: underline;
+  }
+}

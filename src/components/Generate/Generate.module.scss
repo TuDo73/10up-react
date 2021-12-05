@@ -1,0 +1,13 @@
+@import "styles/core/all.scss";
+
+.generateWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.generateImg {
+  transform: translateX(-60px);
+}

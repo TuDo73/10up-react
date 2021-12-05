@@ -1,0 +1,20 @@
+@import "styles/core/all.scss";
+.hero {
+  height: 100%;
+
+  & > div {
+    height: 100%;
+  }
+}
+.heroWrap {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 60px;
+  overflow: hidden;
+}
+
+// .heroImg {
+//   transform: translateX(0);
+// }
